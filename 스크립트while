@@ -1,1 +1,5 @@
-명령어줄에서 그대로 입력
+명령어줄에 여기서부터 한줄로 그대로 입력
+
+i=1; while true; do sleep 1; echo $((i++)) `curl --silent 172.16.221.129 | grep title` ; done
+
+==> 1초마다 위 url 긁어서 title을 보여줌
